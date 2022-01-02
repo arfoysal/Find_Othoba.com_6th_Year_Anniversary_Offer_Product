@@ -24,6 +24,7 @@ public class Find_Offer_Product extends DriverSetup {
 
 			for (WebElement price : pricelist) {
 				if (price.getText().equals("Tk 6")) {
+					System.out.println(driver.getCurrentUrl());
 					System.out.println("Item number - " + item_number);
 					System.out.println("Page number - " + page_number);
 					Thread.sleep(2000);
@@ -42,7 +43,6 @@ public class Find_Offer_Product extends DriverSetup {
 					test = false;
 					System.out.println("Nothing found");
 				}
-
 			}
 
 			Thread.sleep(5000);
